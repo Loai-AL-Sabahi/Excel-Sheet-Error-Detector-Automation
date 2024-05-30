@@ -1,0 +1,116 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "State&Sequence_1",
+        "Zip&Sequence_1",
+        "Street&Sequence_1",
+        "City&Sequence_1",
+        "NumberofEmployees&Sequence_1",
+        "SupplierSince&Sequence_1",
+        "RecurrentSupplier&Sequence_1",
+        "Industry&Sequence_1",
+        "Website&Sequence_1",
+        "ExternalName&Sequence_1",
+        "InternalName&Sequence_1",
+        "FileName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SupplierData&Sequence_1",
+        "dtInputData&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "CreateNewVendors.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtVendorInfo&Sequence_1",
+        "DropDown&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ExcelFileName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DetectErrors.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CheckedCell&Sequence_1",
+        "dtOutputData&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "RecurrentSupplierErrors",
+        "StateErrors",
+        "ZipErrors",
+        "StreetErrors",
+        "CityErrors",
+        "NumberofEmployeesError",
+        "SupplierSinceError",
+        "IndustryErrors",
+        "WebsiteErrors",
+        "ExternalNameErrors",
+        "InternalNameErrors",
+        "ExcelFileName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TakeScreenshots.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ChartImage&Sequence_1",
+        "ErrorImage&Sequence_1",
+        "Iter&Sequence_1",
+        "NumberOfScreenshots&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SendEmail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "RecieverEmail&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "StateErrors",
+        "ZipErrors",
+        "StreetErrors",
+        "CityErrors",
+        "NumberofEmployeesError",
+        "SupplierSinceError",
+        "RecurrentSupplier",
+        "IndustryErrors",
+        "WebsiteErrors",
+        "ExternalNameErrors",
+        "InternalNameErrors"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

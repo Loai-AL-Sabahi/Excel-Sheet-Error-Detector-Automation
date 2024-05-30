@@ -1,0 +1,251 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetData" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="784,2408" sap2010:WorkflowViewState.IdRef="GetData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="794,2343" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="SupplierData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Open Google sheet" sap:VirtualizedContainerService.HintSize="732,2107" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsIncognito="False" OpenMode="Always" ScopeGuid="0090b08f-27ad-415f-a50e-454e98188fd4" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="698,1849" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Supplier Data.xlsx'" sap:VirtualizedContainerService.HintSize="636,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="0090b08f-27ad-415f-a50e-454e98188fd4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://drive.google.com/drive/folders/1xXa66D7wxTHRnRJjbmqgyK4KJepQjmWN" CvTextArea="679, 863, 238, 32" CvTextArgument="Supplier Data.xlsx" CvType="Text" DesignTimeRectangle="681, 859, 389, 40" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Supplier Data.xlsx' parentid=':5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Supplier Data.xlsx' parentid=':5' tag='DIV' type='' class='Q5txwe' check:innerText='Supplier Data.xlsx' /&gt;" Guid="42c8817d-0e19-4ecb-92d4-3d6b31213ee9" InformativeScreenshot="604cb2b4c75750d0d8840879bd796e0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Digital Automation Challenge - Google Drive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="603, 857, 42, 42" CvType="CloseButton" DesignTimeRectangle="609, 863, 32, 32" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;path' parentid=':5' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid=':5' tag='path' class='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download'" sap:VirtualizedContainerService.HintSize="636,198" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0090b08f-27ad-415f-a50e-454e98188fd4" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://drive.google.com/drive/folders/1xXa66D7wxTHRnRJjbmqgyK4KJepQjmWN" CvTextArea="1039, 691, 128, 28" CvTextArgument="Download" CvType="Text" DesignTimeRectangle="1041, 675, 520, 64" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Download' class='a-v-T' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Download' class='a-v-T' type='' tag='DIV' aaname='Download' check:innerText='Download' /&gt;" Guid="f09408da-081b-4e75-af7c-0e4c65331764" InformativeScreenshot="c4a7a2f9408013d0f5e417514f3df947.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Digital Automation Challenge - Google Drive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="969, 684, 40, 41" CvType="Icon" DesignTimeRectangle="977, 694, 26, 26" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;svg&amp;gt;path' idx='15' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='path' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAGNSURBVEhL7ZfLTsJAFIZ9NxMv2GIBdyaSkBh9DbEujUS8gC4M+iKUpSQiQSGxXK1LeIGScMw/ljKTtGXaIC7kS04yc86Z83UKm67RHxFJ3B8M6LVeZ4F1FCKJT/RTWt/cYJHVdScbjpVYipU4CiuxFEsRP5RKVLy/c3Y/BInRW3p6dHb+BIpz+UtXwMv9xPnrKzd/U7h1st74iofDIWmppDuIDSsWWC17prs5rAEvReDsaDRiNS8Cb9ztdUnbSwkDIcAtp3uIz3MXQg/O4GwQc39js22SmtCEwTFVdddbyo5QQ2+703FO+zNXDD5MkxRtVxB4RTyZYL0ySIlBs9UKlKMmKwXSYgB5LD57zdNADrUwhBKDxluDtlVFkCIXFiYuG4Zwg3m81GpMjpCR8rPLFYPlmNioVISiDM/VKnsAGfjZcIFINw4LP1u48f8T4w/CF38z3pvNmdi2bdpPH3g2LjLSmQyNx+OZGPT6fVbwOrCIODw+IuvLcmycGEwmE+HzZFHxaVlsNo8gXh5E33gbDQSvlbAoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text of the downloaded file name" sap:VirtualizedContainerService.HintSize="636,198" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="0090b08f-27ad-415f-a50e-454e98188fd4" TextString="[SupplierData]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable CvTextArea="132, 128, 214, 32" CvType="AnyWordGroup" DesignTimeRectangle="134, 122, 212, 40" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Recent download history' role='dialog' /&gt;&lt;ctrl name='Supplier Data.xlsx' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recent download history' role='dialog' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="68ed2619-681f-439c-ba4a-2c29b2e38bc6" InformativeScreenshot="c9ddade0a3ded0717bf75c812474abff.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Recent download history' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="132, 166, 148, 22" CvTextArgument="18.2 KB * Done" CvType="Text" DesignTimeRectangle="134, 162, 146, 32" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Recent download history' role='dialog' /&gt;&lt;ctrl name='18.2 KB • Done' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recent download history' role='dialog' /&gt;&lt;ctrl name='18.2 KB • Done' role='text' automationid='' check:fulltext='18.2 KB • Done' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:DeleteFileX sap2010:Annotation.AnnotationText="This is to insure that there are no previous input file interrupting the process" DisplayName="Delete input Excel File" sap:VirtualizedContainerService.HintSize="636,165" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="input\input.xlsx">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:DeleteFileX>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" sap2010:Annotation.AnnotationText="To get data from the downloaded csv file to an xlsx file located at our workspace" DisplayName="Excel Process Scope Get Supplier Information" sap:VirtualizedContainerService.HintSize="636,1003" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,860" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File Supplier Data" sap:VirtualizedContainerService.HintSize="540,775" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="Maximize" WorkbookPath="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;,  SupplierData)]">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,479" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="sd:DataTable" Name="dtInputData" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ReadRangeX DisplayName="Read Range from first sheet of supplier data" HasHeaders="False" sap:VirtualizedContainerService.HintSize="444,211" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Supplier Information&quot;)]" SaveTo="[dtInputData]" />
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" sap2010:Annotation.AnnotationText="To make sure all the files we are working with is in our workingspace and in xlsx format" DataTable="[dtInputData]" DisplayName="Write Range Workbook to our workspace" sap:VirtualizedContainerService.HintSize="444,183" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="input\input.xlsx">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:WriteRange>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, -13, 2586, 1386" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="880e81d9acbb267ab02a7e5f4b3aebba.jpg" Selector="&lt;html app='chrome.exe' title='Digital Automation Challenge - Google Drive' /&gt;" Title="Digital Automation Challenge - Google Drive" Url="https://drive.google.com/drive/folders/1xXa66D7wxTHRnRJjbmqgyK4KJepQjmWN?usp=sharing" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:DeleteFileX sap2010:Annotation.AnnotationText="To insure our local storage does not get full when we keep testing multiple times" DisplayName="Delete Supplier Data File that is in the downloads path" sap:VirtualizedContainerService.HintSize="732,148" sap2010:WorkflowViewState.IdRef="DeleteFileX_3" Path="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;,  SupplierData)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:DeleteFileX>
+  </Sequence>
+</Activity>
